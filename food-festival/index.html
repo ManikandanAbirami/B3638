@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Great Indian Food Festival</title>
+    <style>
+      body {
+        background-color: #fff3e0;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      h1 {
+        color: #d32f2f;
+      }
+      .festival {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+      }
+      form {
+        background-color: #ffe0b2;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        margin: 0 auto;
+      }
+      table {
+        width: 80%;
+        margin: 20px auto;
+      }
+      button {
+        background-color: #ff7043;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #e64a19;
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 600px) {
+        .festival {
+          flex-direction: row-reverse;
+        }
+        body {
+          background-color: #ff7043;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to The Great Indian Food Festival!!</h1>
+    <p>
+      Join us for a culinary journey through the diverse and flavorful world of
+      Indian cuisine. From spicy street food to rich desserts, there's something
+      for everyone to enjoy!
+    </p>
+    <h2>Event Details</h2>
+    <!-- Event happening in India Goa -->
+    <div>
+      <li><strong>Date:</strong> December 19-28, 2025</li>
+      <li><strong>Location:</strong> Panaji, Goa, India</li>
+      <li><strong>Time:</strong> 10:00 AM - 10:00 PM</li>
+    </div>
+    <!-- Setting the stalls -->
+    <h2>Food Stalls</h2>
+    <section class="festival">
+      <h3>1. Street Food Stall</h3>
+      <p>
+        Experience the vibrant flavors of Indian street food with dishes like
+        Pani Puri, Vada Pav, and Chaat.
+      </p>
+      <img src="street-food.jpeg" alt="Street Food" />
+    </section>
+    <section class="festival">
+      <h3>2. Regional Cuisine Stall</h3>
+      <p>
+        Explore the diverse regional cuisines of India, including Punjabi, South
+        Indian, Bengali, and more.
+      </p>
+      <img src="regional.jpeg" alt="Regional" />
+    </section>
+    <section class="festival">
+      <h3>3. Dessert Stall</h3>
+      <p>
+        Indulge in traditional Indian sweets such as Gulab Jamun, Jalebi, and
+        Rasgulla.
+      </p>
+      <img src="dessert.jpeg" alt="Dessert" />
+    </section>
+    <section class="festival">
+      <h3>4. Beverage Stall</h3>
+      <p>
+        Refresh yourself with popular Indian beverages like Masala Chai, Lassi,
+        and Nimbu Pani.
+      </p>
+      <img src="beverage.jpeg" alt="Beverage" />
+    </section>
+    <form>
+      <h2>Book Your Tickets Now!</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label>Region:</label>
+      <select id="region" name="region" required>
+        <option value="">Select Region</option>
+        <option value="north">North India</option>
+        <option value="south" selected>South India</option>
+        <option value="east">East India</option>
+        <option value="west">West India</option>
+        <option value="central">Central India</option></select
+      ><br /><br />
+      <label for="tickets">Number of Tickets:</label>
+      <input
+        type="number"
+        id="tickets"
+        name="tickets"
+        min="1"
+        max="10"
+        required
+      /><br /><br />
+      <button type="submit">Book Tickets</button>
+    </form>
+    <div>
+      <!-- The Star Chefs Table -->
+      <h2>Star Chefs Participating</h2>
+      <table>
+        <tr>
+          <th>Chef Name</th>
+          <th>Specialty</th>
+          <th>Experience (Years)</th>
+        </tr>
+        <tr>
+          <td>Vikas Khanna</td>
+          <td>Indian Cuisine</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Sanjeev Kapoor</td>
+          <td>North Indian Cuisine</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Floyd Cardoz</td>
+          <td>Contemporary Indian Cuisine</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Manish Mehrotra</td>
+          <td>Modern Indian Cuisine</td>
+          <td>18</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
