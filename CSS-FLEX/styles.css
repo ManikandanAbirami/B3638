@@ -1,0 +1,37 @@
+section {
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    /* height: 90vh; */
+    border: 2px solid black;
+}
+
+.red {
+    order: 0;
+    flex-grow: 1;
+    height: 75px;
+    background-color: red;
+}
+.green {
+    order: 1;
+    flex-grow: 1;
+    height: 125px;
+    background-color: green;
+}
+.blue {
+    flex-grow: 1;
+    order: 2;
+    height: 100px;
+    background-color: blue;
+}
+div {
+    border: 5px solid black;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}

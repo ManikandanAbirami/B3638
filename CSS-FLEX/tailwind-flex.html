@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind Flexbox Explained</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 p-6 space-y-10 text-sm">
+    <!-- TITLE -->
+    <h1 class="text-2xl font-bold text-center">
+      Tailwind CSS – Flexbox Explained Visually
+    </h1>
+
+    <!-- 1. BASIC FLEX -->
+    <section>
+      <h2 class="font-bold mb-2">1️⃣ Basic flex (row by default)</h2>
+      <div class="flex border p-3 bg-white">
+        <div class="bg-blue-300 p-3">Item 1</div>
+        <div class="bg-green-300 p-3">Item 2</div>
+        <div class="bg-red-300 p-3">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 2. FLEX DIRECTION -->
+    <section>
+      <h2 class="font-bold mb-2">2️⃣ flex-col (top → bottom)</h2>
+      <div class="flex flex-col border p-3 bg-white gap-2">
+        <div class="bg-blue-300 p-3">Item 1</div>
+        <div class="bg-green-300 p-3">Item 2</div>
+        <div class="bg-red-300 p-3">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 3. JUSTIFY CONTENT -->
+    <section>
+      <h2 class="font-bold mb-2">3️⃣ justify-between (main axis)</h2>
+      <div class="flex justify-between border p-3 bg-white">
+        <div class="bg-blue-300 p-3">Left</div>
+        <div class="bg-green-300 p-3">Center</div>
+        <div class="bg-red-300 p-3">Right</div>
+      </div>
+    </section>
+
+    <!-- 4. ALIGN ITEMS -->
+    <section>
+      <h2 class="font-bold mb-2">4️⃣ items-center (cross axis)</h2>
+      <div class="flex items-center h-24 border p-3 bg-white">
+        <div class="bg-blue-300 p-3 h-10">Short</div>
+        <div class="bg-green-300 p-3 h-16">Tall</div>
+        <div class="bg-red-300 p-3 h-12">Medium</div>
+      </div>
+    </section>
+
+    <!-- 5. GAP -->
+    <section>
+      <h2 class="font-bold mb-2">5️⃣ gap-4 (spacing between items)</h2>
+      <div class="flex gap-4 border p-3 bg-white">
+        <div class="bg-blue-300 p-3">A</div>
+        <div class="bg-green-300 p-3">B</div>
+        <div class="bg-red-300 p-3">C</div>
+      </div>
+    </section>
+
+    <!-- 6. FLEX GROW -->
+    <section>
+      <h2 class="font-bold mb-2">6️⃣ flex-1 (grow)</h2>
+      <div class="flex border p-3 bg-white">
+        <div class="bg-blue-300 p-3 flex-1">flex-1</div>
+        <div class="bg-green-300 p-3 flex-none">fixed</div>
+      </div>
+    </section>
+
+    <!-- 7. FLEX WRAP -->
+    <section>
+      <h2 class="font-bold mb-2">7️⃣ flex-wrap</h2>
+      <div class="flex flex-wrap gap-2 border p-3 bg-white">
+        <div class="bg-blue-300 p-3 w-32">1</div>
+        <div class="bg-green-300 p-3 w-32">2</div>
+        <div class="bg-red-300 p-3 w-32">3</div>
+        <div class="bg-yellow-300 p-3 w-32">4</div>
+        <div class="bg-purple-300 p-3 w-32">5</div>
+      </div>
+    </section>
+
+    <!-- 8. CENTERING CARD -->
+    <section>
+      <h2 class="font-bold mb-2">8️⃣ Perfect Center (interview favourite)</h2>
+      <div class="flex items-center justify-center h-48 bg-white border">
+        <div class="bg-blue-500 text-white p-6 rounded">Centered Card</div>
+      </div>
+    </section>
+
+    <!-- 9. NAVBAR -->
+    <section>
+      <h2 class="font-bold mb-2">9️⃣ Navbar Layout</h2>
+      <div class="flex justify-between items-center bg-white border p-4">
+        <div class="font-bold">LOGO</div>
+        <div class="flex gap-4">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. SIDEBAR -->
+    <section>
+      <h2 class="font-bold mb-2">🔟 Sidebar Layout</h2>
+      <div class="flex bg-white border h-40">
+        <aside class="w-40 bg-gray-200 p-3">Sidebar</aside>
+        <main class="flex-1 p-3">Main Content</main>
+      </div>
+    </section>
+  </body>
+</html>
