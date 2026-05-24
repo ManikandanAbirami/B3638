@@ -1,0 +1,10 @@
+Help me create a portfolio website for this project, and also leave placeholders for other section which i will add i later.
+
+Tool: React + Vite + Tailwind CSS
+
+Navbar: Home, About, Skills, Projects, Contact
+Hero Section: Name, Role, Tagline, Reume Download Button, GitHub Button
+About Section: Who am i? What Technologies I know? What project I built?
+Skills Section: Display - Frontend, Backend, Database, Tools
+Projects Section: Add Pizza Palace project card - Project Image, Description, Github Link, Live Demo Link, Tech Stack
+Contact Section: Email, LinkedIn, Github, Phone
